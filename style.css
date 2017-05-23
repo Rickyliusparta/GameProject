@@ -1,0 +1,45 @@
+
+/*  NEW STYLES */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.wrap {
+	position: relative;
+	border: 5px solid black;
+	height: 505px;
+	width: 505px;
+}
+
+.block-container {
+	/*height: 120px;
+	width: 120px;*/
+	width: 500px;
+	height: 125px;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.block {
+	height: 125px;
+	width: 125px;
+	border: 1px solid red;
+}
+
+.red {
+	background-color: red;
+}
