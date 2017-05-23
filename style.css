@@ -1,4 +1,6 @@
 
+
+
 /*  NEW STYLES */
 
 * {
@@ -19,6 +21,7 @@ body {
 	border: 5px solid black;
 	height: 505px;
 	width: 505px;
+	margin-top: 80px;
 }
 
 .block-container {
@@ -38,8 +41,9 @@ body {
 	height: 125px;
 	width: 125px;
 	border: 1px solid red;
+	font-size: 20px;
 }
 
-.red {
-	background-color: red;
+.black {
+	background-color: black;
 }

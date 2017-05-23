@@ -5,7 +5,7 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
-    $('.red').click(function(){
+    $('.black').hover(function(){
     	alert('HELLO!');
     });
 });
