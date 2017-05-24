@@ -77,11 +77,16 @@ body {
 
 }
 
-#level2{
-	visibility: collapse;
-	height: 125px;
-	z-index: -100;
+/*#level2{
+	visibility: hidden;
+	
+}*/
+
+.hiddenLevel {
+	visibility: hidden;
 }
+	
+
 
 
 

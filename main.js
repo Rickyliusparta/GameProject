@@ -62,12 +62,21 @@ $('#next').click(function(event){
 
 //9.adding new map when you reach level 2
 
-$('#level12').
 
+//when click #next it add the level2('div'), 
+// map to appear.
 
+// $('#next').click(function(event){
+// 	('.wrap').addAttr('id','level2');
+// });
 
+// $("#level2").removeAttr("styl.css");
+
+$(".hiddenLevel").css('visibility', 'none' );
 
 });
+
+
 
 
 // });
