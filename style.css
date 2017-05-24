@@ -86,21 +86,24 @@ body {
 }
 
 
+/*.wrap-2{
+	display: none;
+}*/
 
 /*#level2{
 	visibility: hidden;
 	
 }*/
 
-.hiddenLevel {
-	/*visibility: hidden;*/
+/*.hiddenLevel {
+	visibility: hidden;
 	display: none;
 }
 	
 .addBox{
 
 	visibility: hidden;	
-}
+}*/
 
 
 

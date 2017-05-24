@@ -1,7 +1,7 @@
 $(function() {
 
 	var gameInProgress = false
-	
+
 
 	var maps = [
 			[2, 3, 7],
@@ -28,13 +28,16 @@ $('#startButton').click(function(event){
 
 });
 
+
+
+
+
 // if (!gameInProgress) {
 // 	gameInProgress = true
 // 	} else {
 // }
 
 
-//5.alert when game is completed
 
 
 
