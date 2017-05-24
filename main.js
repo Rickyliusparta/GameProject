@@ -7,7 +7,7 @@ $(function() {
 			[2, 3, 7],
 			[10, 11, 12]
 		];
-
+ 
 
 //2. start the game/hover function to stop cursor and end game/border to 	to stop cursor and end game
 
@@ -76,11 +76,13 @@ $('#next').click(function(event){
 //when click #next it add the level2('div'), 
 // map to appear.
 
-$('#next').click(function(event){
-
 //.Enabling visibility
 // $(".hiddenLevel").css('visibility', 'visible' );
 // $('.addBox').css('visibility', 'visible');
+
+$('#next').click(function(event){
+
+
 $(".hiddenLevel").css('display', 'inline-block' );
 $('.addBox').css('display', 'inline-block');
 
@@ -90,9 +92,6 @@ $('.wrap').width($(".wrap").width()+ 130);
 
 
 });
-
-
-
 
 
 

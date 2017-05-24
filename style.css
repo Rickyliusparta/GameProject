@@ -51,6 +51,7 @@ body {
 	background-color: white;
 }
 
+
 .block-container {
 	/*height: 120px;
 	width: 120px;*/
@@ -86,24 +87,17 @@ body {
 }
 
 
-/*.wrap-2{
-	display: none;
-}*/
-
-/*#level2{
-	visibility: hidden;
-	
-}*/
-
-/*.hiddenLevel {
-	visibility: hidden;
-	display: none;
+#level2{
+    position: relative;
+    border: 5px solid black;
+    height: auto;
+    width: auto;
+    margin-top: 80px;
+    background-color: white;
+    margin-bottom: 100px;
+    display: none;
 }
-	
-.addBox{
 
-	visibility: hidden;	
-}*/
 
 
 
