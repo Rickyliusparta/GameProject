@@ -6,6 +6,9 @@ $(function() {
 			[10, 11, 12]
 		];
 
+
+
+
 //2.hover function to stop cursor and end game
 
     // $('.black').hover(function(){
@@ -28,27 +31,38 @@ $(function() {
 // 	alert('Well done');
 // });
 
+//6. make next button to click 
 
-//6.make the block randomise
+$('#next').click(function(event){
+	alert("Get ready for level, '' ");
+});
 
 //7. menu button with start function
 
-	$('#d').click(function(event){
-	alert("start Game");
-});
+	// $('#message').click(function(event){
+	// alert("start Game");
+// });
+
 //8. Coloured blocks to be radomised once you enter new level
 
-	var currentMap =["#2","#3","#7"]
+	// var currentMap =["#2","#3","#7"]
 
-	for (var i = 0; i < currentMap.length; i++){
-	$(currentMap[i]).addClass('black');
+	// for (var i = 0; i < currentMap.length; i++){
+	// $(currentMap[i]).addClass('black');
 
-	};
+	// };
 
-$('#next').click(function(event){
-	$('maps').append('#'+ currentMap[i]);
+// $('#next').click(function(event){
+	// $('maps').append('#'+ currentMap[i]);
 
-});
+
+
+// });
+
+
+//9.adding new map when you reach level 2
+
+$('#level12').
 
 
 
