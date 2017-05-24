@@ -77,16 +77,30 @@ body {
 
 }
 
+#startButton{
+	color: red;
+}
+.exit{
+	background-color: green;
+	color: white;
+}
+
+
+
 /*#level2{
 	visibility: hidden;
 	
 }*/
 
 .hiddenLevel {
-	visibility: hidden;
+	/*visibility: hidden;*/
+	display: none;
 }
 	
+.addBox{
 
+	visibility: hidden;	
+}
 
 
 

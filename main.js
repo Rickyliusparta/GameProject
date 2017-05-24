@@ -1,34 +1,42 @@
 $(function() {
 
-	// var gameInProgress = false
-		var maps = [
+	var gameInProgress = false
+	
+
+	var maps = [
 			[2, 3, 7],
 			[10, 11, 12]
 		];
 
 
+//2. start the game/hover function to stop cursor and end game/border to 	to stop cursor and end game
 
-//2.hover function to stop cursor and end game
+$('#startButton').click(function(event){
+	console.log("game is started")
+	$('.wrap').hover(function(){
 
-    // $('.black').hover(function(){
-    // 	// alert('Game Over!');
-    // });
+		alert('Game Over');
 
-//4. border to 	to stop cursor and end game
+});    
+	$('.black').hover(function(){
+   		alert('Game Over!');
+    });
 
-	// $('.wrap').hover(function(){
-	// 	if (!gameInProgress) {
-	// 		gameInProgress = true
-	// 	} else {
-	// 		alert('Game Over');
-	// }
-	// });
+    $('.exit').hover(function(){
+	alert('Well done');
+	});	
+
+});
+
+// if (!gameInProgress) {
+// 	gameInProgress = true
+// 	} else {
+// }
+
 
 //5.alert when game is completed
 
-// $('#h').hover(function(){
-// 	alert('Well done');
-// });
+
 
 //6. make next button to click 
 
@@ -68,7 +76,11 @@ $('#next').click(function(event){
 $('#next').click(function(event){
 
 //.Enabling visibility
-$(".hiddenLevel").css('visibility', 'visible' );
+// $(".hiddenLevel").css('visibility', 'visible' );
+// $('.addBox').css('visibility', 'visible');
+$(".hiddenLevel").css('display', 'inline-block' );
+$('.addBox').css('display', 'inline-block');
+
 
 $('.wrap').height( $(".wrap").height() + 130);
 $('.wrap').width($(".wrap").width()+ 130);
