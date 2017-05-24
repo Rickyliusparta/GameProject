@@ -8,7 +8,6 @@ $(function() {
 
 
 
-
 //2.hover function to stop cursor and end game
 
     // $('.black').hover(function(){
@@ -66,13 +65,22 @@ $('#next').click(function(event){
 //when click #next it add the level2('div'), 
 // map to appear.
 
-// $('#next').click(function(event){
-// 	('.wrap').addAttr('id','level2');
-// });
+$('#next').click(function(event){
 
-// $("#level2").removeAttr("styl.css");
+//.Enabling visibility
+$(".hiddenLevel").css('visibility', 'visible' );
 
-$(".hiddenLevel").css('visibility', 'none' );
+$('.wrap').height( $(".wrap").height() + 130);
+$('.wrap').width($(".wrap").width()+ 130);
+
+
+});
+
+
+
+
+
+
 
 });
 
