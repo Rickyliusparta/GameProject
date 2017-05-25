@@ -39,7 +39,7 @@ body {
 	border: 2px solid #29e8e1;
 	float: right;
 	font-size: 40px;
-	
+	display; visibility: hidden; 
 }
 
 .wrap {

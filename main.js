@@ -7,7 +7,11 @@ $(function() {
 			[2, 3, 7],
 			[10, 11, 12]
 		];
- 
+
+
+
+
+//
 
 //2. start the game/hover function to stop cursor and end game/border to 	to stop cursor and end game
 
@@ -23,12 +27,26 @@ $('#startButton').click(function(event){
     });
 
     $('.exit').hover(function(){
-	alert('Well done');
-	});	
+    	$('#next').css('visibility', 'visible');
+    	$('.wrap').css('display', 'none');
+    	alert = function(){
+
+    	};
+	});
+
+	event.preventDefault();
 
 });
 
 
+// $('.exit').hover(function(event){
+// 	if(!gameInProgress){
+// 	$('.wrap').css('visibility', 'visible');
+// 	}else{
+// 		gameInProgress= true 
+// 	$('.wrap').css('display', 'none');	
+// 	}
+// });
 
 
 
@@ -52,6 +70,11 @@ $('#next').click(function(event){
 	// $('#message').click(function(event){
 	// alert("start Game");
 // });
+
+//8.if touch wall fail and start again.
+
+
+
 
 //8. Coloured blocks to be radomised once you enter new level
 
