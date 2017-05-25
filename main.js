@@ -10,11 +10,15 @@ $(function() {
 		];
 var back = "#level1";
 
+
 //menu page
+
 
 $('#start').on('click', function(event){
 	$('.menu').hide();
 	$('#level1').show();
+
+
 });
 
 $('#tryAgain').hide();
@@ -22,10 +26,10 @@ $('#tryAgain').hide();
 
 //2. start the game/hover function to stop cursor and end game/border to 	to stop cursor and end game
 
-$('#startButton').click(function(event){
+$('.startButton').click(function(event){
 	console.log("game is started")
 		event.preventDefault();
-			
+		timer(7);	
 
 
 
@@ -50,6 +54,14 @@ $('#startButton').click(function(event){
     	if (!$(this).hasClass("exit")) return; 
     	$('#next').css('visibility', 'visible');
     	$('#level1').hide();
+    	$('#tryAgain').css('visibility', 'hidden');
+
+	});
+
+	$('.exit2').hover(function(){
+    	if (!$(this).hasClass("exit")) return; 
+    	$('#next').css('visibility', 'visible');
+		$('#level2').hide();
     	$('#tryAgain').css('visibility', 'hidden');
 
 	});
@@ -82,17 +94,46 @@ $('#tryAgain').click(function(event){
 
 $('#next').click(function(event){
 	$('#level2').show();
+	$('#next').hide();
+
 
 	event.preventDefault();	
 });
 
-//7. menu button with start function
 
-	// $('#message').click(function(event){
-	// alert("start Game");
-// });
+//timer
+
+function timer (time) {
 
 
+    loopTime = time;
+
+    console.log("intTime: " + time);
+
+    var interval = setInterval(function() {
+
+        if(loopTime === 0) {
+
+            console.log("stop");
+            clearInterval(interval);
+            //do something
+            $('#tryAgain').show();
+
+        } else {
+
+            
+            loopTime--;
+            $("#time").html(loopTime);
+
+        }
+    }, 1000);
+}
+
+//switching blocks
+
+$('#lvl2-2').hover(function(){
+	$('.switch').addClass('black')
+});
 
 
 

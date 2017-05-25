@@ -21,7 +21,7 @@ body {
 	list-style: none;
 	color: red;   
 	position: absolute;
-    margin-top: 301px;
+    margin-top: 171px;
     font-size: 90px;
 }	
 
@@ -52,7 +52,7 @@ body {
     font-size: 50px;
     display: none; 
     text-align: center;
-    margin-top: 167px;
+    margin-top: -100px;
     font-family: fantasy;
     background-color: rgba(255, 0, 0, 0.51);
     color: rgb(254, 251, 250);
@@ -60,10 +60,19 @@ body {
 }
 
 #next{
-	border: 2px solid #29e8e1;
-	float: right;
-	font-size: 40px;
-	display; visibility: hidden; 
+	border: 15px solid white;
+    float: right;
+    font-size: 40px;
+    visibility: hidden;
+    margin-top: 271px;
+    font-size: 118px;
+    color: #6b858d;
+    border-right-color: blue;
+    border-bottom-color: darkred;
+    border-top-color: darkred;
+    border-left-color: blue;
+    background-color: white;
+
 }
 
 .wrap {
@@ -107,8 +116,8 @@ h1{
 
 }
 
-#startButton{
-	color: red;
+.startButton{
+	color: blue;
 }
 
 .exit{
@@ -128,7 +137,13 @@ h1{
     display: none;
 }
 
+#time{
+	border: solid black;
+    font-size: 45px;
+    background-color: aqua;
 
+
+}
 
 
 
