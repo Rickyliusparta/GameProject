@@ -1,3 +1,4 @@
+
 $(function() {
 
 	var gameInProgress = false
@@ -23,12 +24,11 @@ $('#start').on('click', function(event){
 $('#startButton').click(function(event){
 	console.log("game is started")
 	$('.wrap').hover(function(){
-
-		alert('Game Over');
+		$('#tryAgain').show();
 
 });    
 	$('.black').hover(function(){
-   		alert('Game Over!');
+		$('#tryAgain').show();
     });
 
     $('.exit').hover(function(){

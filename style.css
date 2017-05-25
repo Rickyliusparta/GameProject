@@ -47,9 +47,15 @@ body {
 
 
 #tryAgain{
-	border: 2px solid black;
-	width: 100px;
-	list-style: none;
+	width: 202px;
+    list-style: none;
+    font-size: 50px;
+    display: none; 
+    text-align: center;
+    margin-top: 167px;
+    font-family: fantasy;
+    background-color: rgba(255, 0, 0, 0.51);
+    color: rgb(254, 251, 250);
 }
 
 #next{
