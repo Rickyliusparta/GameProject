@@ -57,6 +57,7 @@ body {
     background-color: rgba(255, 0, 0, 0.51);
     color: rgb(254, 251, 250);
     position: absolute;
+    z-index: 100;
 }
 
 #next{
@@ -72,6 +73,7 @@ body {
     border-top-color: darkred;
     border-left-color: blue;
     background-color: white;
+
 
 }
 
@@ -116,6 +118,10 @@ h1{
 
 }
 
+.white{
+	background-color: white;
+}
+
 .startButton{
 	color: blue;
 }
@@ -144,6 +150,14 @@ h1{
 
 
 }
+
+@-webkit-keyframes wobble  {
+  0%  { -webkit-transform:  rotate(0deg); }
+  20%  { -webkit-transform:  rotate(2deg); }
+  50%  { -webkit-transform:  rotate(-2deg); }
+  100%  { -webkit-transform:  rotate(0deg); }
+}
+.wobble { -webkit-animation: wobble 5s infinite; }
 
 
 

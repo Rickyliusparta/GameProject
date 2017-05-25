@@ -8,45 +8,38 @@ $(function() {
 			[2, 3, 7],
 			[10, 11, 12]
 		];
-var back = "#level1";
+	var back = "#level1";
+
+	//menu page
 
 
-//menu page
+	$('#start').on('click', function(event){
+		$('.menu').hide();
+		$('#level1').show();
 
+	});
 
-$('#start').on('click', function(event){
-	$('.menu').hide();
-	$('#level1').show();
-
-
-});
-
-$('#tryAgain').hide();
+	$('#tryAgain').hide();
 //
 
-//2. start the game/hover function to stop cursor and end game/border to 	to stop cursor and end game
+//2. start the game/hover function to stop cursor and end game/border to stop cursor and end game
 
-$('.startButton').click(function(event){
-	console.log("game is started")
+	$('.startButton').click(function(event){
+		console.log("game is started")
 		event.preventDefault();
 		timer(7);	
 
-
-
-	$('.wrap').hover(function(){
-	$('#tryAgain').show();
-	$('#20').removeClass('exit');
+		$('.wrap').hover(function(){
+		$('#tryAgain').show();
+		$('#20').removeClass('exit');
 
 	});   
 
 	$('.black').hover(function(){
+		if (!$(this).hasClass('black')) return;
 		console.log('hover-b')
 		$('#tryAgain').show();
-	$('#20').removeClass('exit');
-	
-
-
-
+		$('#20').removeClass('exit');
     });
 
 
@@ -55,35 +48,64 @@ $('.startButton').click(function(event){
     	$('#next').css('visibility', 'visible');
     	$('#level1').hide();
     	$('#tryAgain').css('visibility', 'hidden');
+    	timer(0);
 
 	});
 
-	$('.exit2').hover(function(){
-    	if (!$(this).hasClass("exit")) return; 
-    	$('#next').css('visibility', 'visible');
-		$('#level2').hide();
-    	$('#tryAgain').css('visibility', 'hidden');
-
-	});
 
 });
 
 
+// level 2 start function 
 
 
 
-// if (!gameInProgress) {
-// 	gameInProgress = true
-// 	} else {
-// }
+$('.startButton2').click(function(event){
+	console.log("game is started")
+	$("#level1").remove()
+		
+	timer(7);	
 
-//try again function to reset page
+	triggerWobble();
+
+	$('.wrap').hover(function(){
+		$('#tryAgain').css('visibility', 'visible');
+		$('#20').removeClass('exit2');
+
+	});   
+
+	$('.black').hover(function(){
+		console.log('hover-b')
+		if (!$(this).hasClass('black')) return;
+		$('#tryAgain').css('visibility', 'visible');
+		$('#20').removeClass('exit2');
+    });
+
+    $('#m2').hover(function(){
+		$('#m3').addClass('black');
+		$('#15').removeClass('black');
+		
+	});
+
+
+    $('.exit2').hover(function(){
+    	if (!$(this).hasClass("exit2")) return; 
+    	$('#next').css('visibility', 'visible');
+    	$('#level2').hide();
+    	$('#tryAgain').css('visibility', 'hidden');
+    	timer(0);
+
+	});
+
+
+});
+
+
+// //try again function to reset page
 
 $('#tryAgain').click(function(event){
 	console.log('click')	
 	history.go();	
-
-
 });
 
 
@@ -92,12 +114,11 @@ $('#tryAgain').click(function(event){
 
 //6. make next button to click 
 
+
 $('#next').click(function(event){
 	$('#level2').show();
 	$('#next').hide();
 
-
-	event.preventDefault();	
 });
 
 
@@ -129,11 +150,13 @@ function timer (time) {
     }, 1000);
 }
 
-//switching blocks
+//switching blocks level 2
 
-$('#lvl2-2').hover(function(){
-	$('.switch').addClass('black')
-});
+function triggerWobble () {
+	setTimeout(function () {
+		$("#level2").addClass("wobble")
+	}, 3000)
+}
 
 
 
