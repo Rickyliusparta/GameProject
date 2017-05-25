@@ -25,26 +25,38 @@ $('#tryAgain').hide();
 $('#startButton').click(function(event){
 	console.log("game is started")
 		event.preventDefault();
+			
+
+
 
 	$('.wrap').hover(function(){
 	$('#tryAgain').show();
+	$('#20').removeClass('exit');
 
 	});   
 
 	$('.black').hover(function(){
 		console.log('hover-b')
 		$('#tryAgain').show();
+	$('#20').removeClass('exit');
+	
+
+
+
     });
 
+
     $('.exit').hover(function(){
+    	if (!$(this).hasClass("exit")) return; 
     	$('#next').css('visibility', 'visible');
     	$('#level1').hide();
     	$('#tryAgain').css('visibility', 'hidden');
 
 	});
 
-
 });
+
+
 
 
 
@@ -58,6 +70,8 @@ $('#startButton').click(function(event){
 $('#tryAgain').click(function(event){
 	console.log('click')	
 	history.go();	
+
+
 });
 
 

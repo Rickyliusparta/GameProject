@@ -56,7 +56,7 @@ body {
     font-family: fantasy;
     background-color: rgba(255, 0, 0, 0.51);
     color: rgb(254, 251, 250);
-        position: absolute;
+    position: absolute;
 }
 
 #next{
@@ -76,6 +76,10 @@ body {
 	display: none;
 }
 
+h1{
+	font-size: 66px;
+	color: white;
+}
 
 .block-container {
 	/*height: 120px;
@@ -106,6 +110,7 @@ body {
 #startButton{
 	color: red;
 }
+
 .exit{
 	background-color: green;
 	color: white;
