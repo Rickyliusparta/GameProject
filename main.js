@@ -2,25 +2,23 @@
 $(function() {
 
 	var gameInProgress = false
-
-
-	var maps = [
-			[2, 3, 7],
-			[10, 11, 12]
-		];
-	var back = "#level1";
+// var maps = [
+// 		[2, 3, 7],
+// 		[10, 11, 12]
+// 	];
+	// var back = "#level1";
 
 	//menu page
 
+$('#start').on('click', function(event){
+	$('.menu').hide();
+	$('#level1').show();
 
-	$('#start').on('click', function(event){
-		$('.menu').hide();
-		$('#level1').show();
+});
 
-	});
+$('#tryAgain').hide();
 
-	$('#tryAgain').hide();
-//
+
 
 //2. start the game/hover function to stop cursor and end game/border to stop cursor and end game
 
@@ -80,11 +78,17 @@ $('.startButton2').click(function(event){
 		$('#tryAgain').css('visibility', 'visible');
 		$('#20').removeClass('exit2');
     });
-
+//moving boxes
     $('#m2').hover(function(){
 		$('#m3').addClass('black');
 		$('#15').removeClass('black');
-		
+		$('#m8').removeClass('black');
+		$('#m3').hover(function(){
+			$('#tryAgain').css('visibility','visible');
+		});
+
+
+
 	});
 
 
@@ -137,7 +141,6 @@ function timer (time) {
 
             console.log("stop");
             clearInterval(interval);
-            //do something
             $('#tryAgain').show();
 
         } else {

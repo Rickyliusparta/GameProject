@@ -13,13 +13,20 @@
 <h1>Amaze your way out!</h1>
 
 
-<body class="opened">
+<body>
 
 <div class="menu">
 	<li id="start">Start</li>
 	<li id="instruct">Instructions</li>	
 </div>
 
+<div >
+	<li class="instrPage">Welcom to Amaze, simply use the mouse to move the cursor to paly the game.
+	</li>
+	<li class="instrPage">The Objective is to move the cursor through the maze without touching the walls.
+	</li>
+	<li class="instrPage">To start the game click start.Beware there is a timer, if time runs out then its Game Over. </li>
+</div>
 <div id="time">clock</div>
 
 <div class="wrap" id='level1'>
@@ -95,8 +102,8 @@
 		<div class="block">5</div>
 		<div class="block black">6</div>
 		<div class="block">7</div>
-		<div class="block black">8</div>
-		<div class='block'>20</div>
+		<div class="block black" id='m8'>8</div>
+		<div class='block black'>20</div>
 		<div class='block'>21</div>
 
 
@@ -123,7 +130,7 @@
 		<div class="block black" id="17">17
 		</div>
 		<div class='block' id='18'></div>
-		<div class='block exit exit2' id='20'>Exit</div>
+		<div class='block black'></div>
 
 
 	</div>
@@ -135,7 +142,7 @@
 		<div class="block" >16</div>
 		<div class="block black" >17</div>
 		<div class='block' >18</div>
-		<div class='block' >18</div>
+		<div class='block exit exit2' id='20' >Exit</div>
 		
 
 

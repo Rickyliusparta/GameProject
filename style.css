@@ -45,6 +45,18 @@ body {
     margin-top: 38px;
 }
 
+.instrPage{
+	border: 7px solid #7a9296;
+    width: 781px;
+    display: inline-block;
+    font-size: 45px;
+    font-family: fantasy;
+    color: #4c5b4c;
+    font-style: oblique;
+    background-color: #243233;
+    display: none;
+
+}
 
 #tryAgain{
 	width: 202px;
@@ -79,11 +91,11 @@ body {
 
 .wrap {
 	position: relative;
-	border: 5px solid black;
+	border: 5px solid #45626a;
 	height: 505px;
 	width: 505px;
 	margin-top: 80px;
-	background-color: white;
+	background-color: #2b3b3b;
 	display: none;
 }
 
@@ -108,13 +120,13 @@ h1{
 .block {
 	height: 125px;
 	width: 125px;
-	border: 1px solid red;
-	font-size: 20px;
+/*	border: 1px solid red;
+*/	font-size: 20px;
 	color: red;
 }
 
 .black {
-	background-color: black;
+	background: url(http://media.builderdepot.co.uk/media/product/e3b/class-a-solid-engineering-brick-blue-29e.jpg);
 
 }
 
@@ -152,12 +164,12 @@ h1{
 }
 
 @-webkit-keyframes wobble  {
-  0%  { -webkit-transform:  rotate(0deg); }
-  20%  { -webkit-transform:  rotate(2deg); }
-  50%  { -webkit-transform:  rotate(-2deg); }
-  100%  { -webkit-transform:  rotate(0deg); }
+  0%  { -webkit-transform:  rotate(5deg); }
+  20%  { -webkit-transform:  rotate(15deg); }
+  50%  { -webkit-transform:  rotate(-15deg); }
+  100%  { -webkit-transform:  rotate(5deg); }
 }
-.wobble { -webkit-animation: wobble 5s infinite; }
+.wobble { -webkit-animation: wobble 8s infinite; }
 
 
 
