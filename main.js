@@ -8,6 +8,7 @@ $(function() {
 			[2, 3, 7],
 			[10, 11, 12]
 		];
+var back = "#level1";
 
 //menu page
 
@@ -16,37 +17,48 @@ $('#start').on('click', function(event){
 	$('#level1').show();
 });
 
-
+$('#tryAgain').hide();
 //
 
 //2. start the game/hover function to stop cursor and end game/border to 	to stop cursor and end game
 
 $('#startButton').click(function(event){
 	console.log("game is started")
-	$('.wrap').hover(function(){
-		$('#tryAgain').show();
+		event.preventDefault();
 
-});    
+	$('.wrap').hover(function(){
+	$('#tryAgain').show();
+
+	});   
+
 	$('.black').hover(function(){
+		console.log('hover-b')
 		$('#tryAgain').show();
     });
 
     $('.exit').hover(function(){
     	$('#next').css('visibility', 'visible');
-    	$('.wrap').css('display', 'none');
-    	alert = function(){
+    	$('#level1').hide();
+    	$('#tryAgain').css('visibility', 'hidden');
 
-    	};
 	});
 
-	event.preventDefault();
 
 });
+
+
 
 // if (!gameInProgress) {
 // 	gameInProgress = true
 // 	} else {
 // }
+
+//try again function to reset page
+
+$('#tryAgain').click(function(event){
+	console.log('click')	
+	history.go();	
+});
 
 
 
@@ -66,7 +78,7 @@ $('#next').click(function(event){
 	// alert("start Game");
 // });
 
-//8.if touch wall fail and start again.
+
 
 
 
