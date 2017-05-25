@@ -18,21 +18,38 @@ body {
 }
 
 .menu{
-	border: 10px solid red;
 	list-style: none;
-	font-size: 20px;
-	color: red;
+	color: red;   
+	position: absolute;
+    margin-top: 301px;
+    font-size: 90px;
 }	
 
 #start{
-	border:1px solid red;
+	border: 3px solid white;
+    border-bottom-left-radius: 100px;
+    text-align: center;
+    border-top-right-radius: 87px;
+    color: #dee7ec;
+    background-color: #2b3c43;
+    font-family: fantasy;
+}
+
+#instruct{
+    color: rgba(226, 235, 239, 0.96);
+    background-color: #738c93;
+    border-top-right-radius: 65px;
+    border-bottom-left-radius: 74px;
+    font-family: fantasy;
+    border: 5px solid white;
+    margin-top: 38px;
 }
 
 
-
-#message{
+#tryAgain{
 	border: 2px solid black;
 	width: 100px;
+	list-style: none;
 }
 
 #next{
@@ -49,6 +66,7 @@ body {
 	width: 505px;
 	margin-top: 80px;
 	background-color: white;
+	display: none;
 }
 
 

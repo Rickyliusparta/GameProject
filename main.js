@@ -8,7 +8,12 @@ $(function() {
 			[10, 11, 12]
 		];
 
+//menu page
 
+$('#start').on('click', function(event){
+	$('.menu').hide();
+	$('#level1').show();
+});
 
 
 //
@@ -38,18 +43,6 @@ $('#startButton').click(function(event){
 
 });
 
-
-// $('.exit').hover(function(event){
-// 	if(!gameInProgress){
-// 	$('.wrap').css('visibility', 'visible');
-// 	}else{
-// 		gameInProgress= true 
-// 	$('.wrap').css('display', 'none');	
-// 	}
-// });
-
-
-
 // if (!gameInProgress) {
 // 	gameInProgress = true
 // 	} else {
@@ -62,7 +55,9 @@ $('#startButton').click(function(event){
 //6. make next button to click 
 
 $('#next').click(function(event){
-	alert("Get ready for level, '' ");
+	$('#level2').show();
+
+	event.preventDefault();	
 });
 
 //7. menu button with start function
@@ -103,18 +98,18 @@ $('#next').click(function(event){
 // $(".hiddenLevel").css('visibility', 'visible' );
 // $('.addBox').css('visibility', 'visible');
 
-$('#next').click(function(event){
+// $('#next').click(function(event){
 
 
-$(".hiddenLevel").css('display', 'inline-block' );
-$('.addBox').css('display', 'inline-block');
+// $(".hiddenLevel").css('display', 'inline-block' );
+// $('.addBox').css('display', 'inline-block');
 
 
-$('.wrap').height( $(".wrap").height() + 130);
-$('.wrap').width($(".wrap").width()+ 130);
+// $('.wrap').height( $(".wrap").height() + 130);
+// $('.wrap').width($(".wrap").width()+ 130);
 
 
-});
+// });
 
 
 
