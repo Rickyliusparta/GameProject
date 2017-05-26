@@ -106,7 +106,7 @@ body {
 	margin-top: 80px;
 	background-color: #2b3b3b;
 	display: none;
-	background:url(https://media.giphy.com/media/XG9PR7CuOfPlS/giphy.gif);
+	background:url(http://images.all-free-download.com/images/graphicthumb/green_bamboo_background_picture_169375.jpg);
 }
 
 h1{
@@ -157,12 +157,24 @@ h1{
 	color:white;
 }
 .exit{
-	background-color: green;
+	background-color: none;
 	color: white;
 	text-align: center;
 	font-size: 45px;
+	border: solid white;
+
 }
 
+#return{
+	border: 2px solid white;
+	visibility: hidden;
+	text-align: center;
+	font-size: 90px;
+	width: 50%;	
+	margin: auto;
+	background-color: white;
+		
+}
 
 #level2{
     position: relative;
@@ -198,3 +210,7 @@ h1{
 	;
 }
 
+.exit2{
+	background-color: green;
+	font-size: 45px;
+}

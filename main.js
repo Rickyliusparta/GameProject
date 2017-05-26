@@ -19,8 +19,16 @@ $('#start').on('click', function(event){
 $('#instruct').on('click', function(){
 	$('.menu').hide();
 	$('.instrPage').show();
+	$('#return').css('visibility', 'visible');
+
+
 });
 
+
+$('#return').click(function(event){
+
+	history.go();
+})
 
 $('#tryAgain').hide();
 
@@ -28,28 +36,29 @@ $('#tryAgain').hide();
 
 //2. start the game/hover function to stop cursor and end game/border to stop cursor and end game
 
-	$('.startButton').click(function(event){
-		console.log("game is started")
-		event.preventDefault();
-		timer(7);	
+$('.startButton').click(function(event){
+	console.log("game is started")
+	event.preventDefault();
+	timer(7);	
 
-		$('.wrap').hover(function(){
-		$('#tryAgain').show();
-		$('#20').removeClass('exit');
+	$('.wrap').hover(function(){
+	$('#tryAgain').show();
+	$('#20').removeClass('exit');
 
 	});   
 
-	$('.black').hover(function(){
-		if (!$(this).hasClass('black')) return;
-		console.log('hover-b')
-		$('#tryAgain').show();
-		$('#20').removeClass('exit');
+$('.black').hover(function(){
+	if (!$(this).hasClass('black')) return;
+	console.log('hover-b')
+	$('#tryAgain').show();
+	$('#20').removeClass('exit');
+
     });
 
 
-    $('.exit').hover(function(){
-    	if (!$(this).hasClass("exit")) return; 
-    	$('#next').css('visibility', 'visible');
+$('.exit').hover(function(){
+   	if (!$(this).hasClass("exit")) return; 
+   		$('#next').css('visibility', 'visible');
     	$('#level1').hide();
     	$('#tryAgain').css('visibility', 'hidden');
     	timer(0);
@@ -73,25 +82,26 @@ $('.startButton2').click(function(event){
 
 	triggerWobble();
 
-	$('.wrap').hover(function(){
-		$('#tryAgain').css('visibility', 'visible');
-		$('#20').removeClass('exit2');
+$('.wrap').hover(function(){
+	$('#tryAgain').css('visibility', 'visible');
+	$('#20').removeClass('exit2');
 
 	});   
 
-	$('.black').hover(function(){
-		console.log('hover-b')
-		if (!$(this).hasClass('black')) return;
+$('.black').hover(function(){
+	console.log('hover-b')
+	if (!$(this).hasClass('black')) return;
 		$('#tryAgain').css('visibility', 'visible');
 		$('#20').removeClass('exit2');
     });
 //moving boxes
-    $('#m2').hover(function(){
-		$('#m3').addClass('black');
-		$('#15').removeClass('black');
-		$('#m8').removeClass('black');
-		$('#m3').hover(function(){
-		$('#tryAgain').css('visibility','visible');
+$('#m2').hover(function(){
+	$('#m3').addClass('black');
+	$('#15').removeClass('black');
+	$('#m8').removeClass('black');
+	$('#m3').hover(function(){
+	$('#tryAgain').css('visibility','visible');
+
 		});
 
 
@@ -99,15 +109,16 @@ $('.startButton2').click(function(event){
 	});
 
 
-    $('.exit2').hover(function(){
-    	if (!$(this).hasClass("exit2")) return; 
-    	$('#next').css('visibility', 'visible');
-    	$('#level2').hide();
-    	$('#tryAgain').hide();
-    	timer(0);
+$('.exit2').hover(function(){
+    if (!$(this).hasClass("exit2")) return; 
+    $('#next').css('visibility', 'visible');
+    $('#level2').hide();
+    $('#tryAgain').hide();
+    timer(0);
 
 	});
 
+$("#time").css('visibility', 'visible');
 
 });
 
@@ -118,9 +129,6 @@ $('#tryAgain').click(function(event){
 	console.log('click')	
 	history.go();	
 });
-
-
-
 
 
 //6. make next button to click 
