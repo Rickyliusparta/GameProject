@@ -16,6 +16,12 @@ $('#start').on('click', function(event){
 
 });
 
+$('#instruct').on('click', function(){
+	$('.menu').hide();
+	$('.instrPage').show();
+});
+
+
 $('#tryAgain').hide();
 
 
@@ -50,6 +56,7 @@ $('#tryAgain').hide();
 
 	});
 
+    $("#time").css('visibility', 'visible');
 
 });
 
@@ -84,7 +91,7 @@ $('.startButton2').click(function(event){
 		$('#15').removeClass('black');
 		$('#m8').removeClass('black');
 		$('#m3').hover(function(){
-			$('#tryAgain').css('visibility','visible');
+		$('#tryAgain').css('visibility','visible');
 		});
 
 
@@ -96,7 +103,7 @@ $('.startButton2').click(function(event){
     	if (!$(this).hasClass("exit2")) return; 
     	$('#next').css('visibility', 'visible');
     	$('#level2').hide();
-    	$('#tryAgain').css('visibility', 'hidden');
+    	$('#tryAgain').hide();
     	timer(0);
 
 	});
@@ -158,7 +165,7 @@ function timer (time) {
 function triggerWobble () {
 	setTimeout(function () {
 		$("#level2").addClass("wobble")
-	}, 3000)
+	}, 2500)
 }
 
 
