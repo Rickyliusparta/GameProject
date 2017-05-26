@@ -55,15 +55,15 @@ body {
 }
 
 .instrPage{
-	border: 7px solid #7a9296;
     width: 781px;
     display: inline-block;
     font-size: 45px;
     font-family: fantasy;
     color: #275627;
     font-style: oblique;
-    background-color: rgba(195, 215, 216, 0.44);
+    background-color: rgba(195, 215, 216, 0.72);
     display: none;
+    list-style: none;
 
 }
 
@@ -173,7 +173,7 @@ h1{
 	width: 50%;	
 	margin: auto;
 	background-color: white;
-		
+
 }
 
 #level2{
