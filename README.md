@@ -1,7 +1,6 @@
 #Amaze
 
-This is a browser based game, only works bying accessing the file from the user account and GitHub.
-
+This is a browser based game, only works by accessing the file from the user account and GitHub.
 
 
 ##Project Objective:
@@ -15,7 +14,6 @@ This game needs  a menu diplaying Start button and Insrucitons.
 To run the game you, follow the link and download Zip file.
 
 git@github.com:Rickyliusparta/GameProject.git
-
 
 
 ##The Game:
